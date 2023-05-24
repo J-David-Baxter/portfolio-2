@@ -14,7 +14,7 @@ export default async function Home() {
 
       <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
-          <div key={project._id} className="border border-gray-500 rounded-lg">
+          <div key={project._id} className="border border-gray-500 rounded-lg p-3">
             {project.image && (
               <Image
                 src={project.image}
