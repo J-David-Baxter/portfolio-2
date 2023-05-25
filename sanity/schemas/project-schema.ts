@@ -33,6 +33,11 @@ const project = {
         type: "url"
       },
       {
+        name: "githubUrl",
+        title: "Github URL",
+        type: "url"
+      },
+      {
         name: "content",
         title: "Content",
         type: "array",

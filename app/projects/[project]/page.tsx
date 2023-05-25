@@ -14,14 +14,24 @@ export default async function Project({ params }: Props) {
         <div className="max-w-3xl mx-auto py-20">
             <header className="flex items-center justify-between">
                 <h1 className="bg-blue-600 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold">{project.name}</h1>
-                <a 
-                    href={project.url} 
-                    title="View Project" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-blue-600 hover:text-white transition"
-                >View Project
-                </a>
+                <div>
+                    <a 
+                        href={project.url} 
+                        title="View Project" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-blue-600 hover:text-white transition"
+                    >View Project
+                    </a>
+                    <a 
+                        href={project.githubUrl} 
+                        title="Github Code" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-blue-600 hover:text-white transition ml-2"
+                    >GitHub Code
+                    </a>
+                </div>
             </header>
 
             <div className="text-lg text-gray-700 mt-5">
