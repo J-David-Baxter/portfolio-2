@@ -29,7 +29,7 @@ export default async function Project({ params }: Props) {
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-blue-600 hover:text-white transition ml-2"
-                    >GitHub Code
+                    >Source Code
                     </a>
                 </div>
             </header>
