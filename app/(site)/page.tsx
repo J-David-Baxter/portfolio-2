@@ -1,6 +1,7 @@
 import { getProjects } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
+import { icons } from '../icons';
 
 export default async function Home() {
   const projects = await getProjects()
@@ -11,10 +12,17 @@ export default async function Home() {
 
       <p className="mt-3 text-2xl text-gray-600">I&apos;m passionate about developing front end applications with modern technologies.</p>
 
-      {/* Images */}
-      <div></div>
+      <div className="flex gap-14 mt-10">
+        {icons.map((icon, i) => (
+          <Image 
+            key={i}
+            src={icon}
+            alt="icon"
+            height={75}
+          />
+        ))}
+      </div>
 
-      {/* Bio */}
       <h2 className="mt-24 font-bold text-gray-700 text-3xl">About me</h2>
       <p className="mt-3 text-lg text-gray-600">I&apos;m a front-end developer from Waterford, Connecticut. 
       I enjoy building web applications with just about any technology, but my favorites are JavaScript 
@@ -24,7 +32,7 @@ export default async function Home() {
 
       <h2 className="mt-24 font-bold text-gray-700 text-3xl">My projects</h2>
 
-      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects">
         {projects.map((project) => (
           <Link 
             key={project._id} 

@@ -1,6 +1,7 @@
 import { getProject } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
     params: { project: string }
@@ -12,6 +13,9 @@ export default async function Project({ params }: Props) {
     
     return (
         <div>
+            <div className="mb-5 hover:underline">
+                <Link href="#projects">Back to projects</Link>
+            </div>
             <header className="flex items-center justify-between">
                 <h1 className="bg-blue-600 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold">{project.name}</h1>
                 <div>
