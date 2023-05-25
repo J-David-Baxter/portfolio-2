@@ -9,7 +9,18 @@ export default async function Home() {
     <div>
       <h1 className="text-7xl font-bold">Hello I&apos;m <span className="bg-blue-600 bg-clip-text text-transparent">David</span></h1>
 
-      <p className="mt-3 text-xl text-gray-600">I&apos;m passionate about developing front end applications with modern technologies.</p>
+      <p className="mt-3 text-2xl text-gray-600">I&apos;m passionate about developing front end applications with modern technologies.</p>
+
+      {/* Images */}
+      <div></div>
+
+      {/* Bio */}
+      <h2 className="mt-24 font-bold text-gray-700 text-3xl">About me</h2>
+      <p className="mt-3 text-lg text-gray-600">I&apos;m a front-end developer from Waterford, Connecticut. 
+      I enjoy building web applications with just about any technology, but my favorites are JavaScript 
+      and React for the front end and Node.js and MongoDB for the back</p>
+      <p className="mt-3 text-lg text-gray-600">I try to keep myself up to date with new technologies and I&apos;m always in the process of learning 
+        something new. I have experience using libraries such as Material UI, Tailwind CSS, and React-Bootstrap.</p>
 
       <h2 className="mt-24 font-bold text-gray-700 text-3xl">My projects</h2>
 
