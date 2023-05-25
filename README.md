@@ -7,3 +7,5 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - Tailwind CSS
 - TypeScript
 - Sanity
+
+#### Deployment: https://jdavidbaxter.vercel.app/
