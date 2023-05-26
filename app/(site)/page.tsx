@@ -12,7 +12,7 @@ export default async function Home() {
 
       <p className="mt-3 text-2xl text-gray-600">I&apos;m passionate about developing front end applications with modern technologies.</p>
 
-      <div className="flex gap-14 mt-10">
+      <div className="flex gap-14 mt-10 flex-wrap">
         {icons.map((icon, i) => (
           <Image 
             key={i}
